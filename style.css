@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container { /*Aqui eu criei um container que pega somente o titulo e o menu de navegação*/
+    max-width: 1024px; /*Largura máxima*/
+    width: 100%; /*Aqui ele terá 100% da largura*/
+    margin: 0 auto; /*Aqui ele vai centralizar na horizontal*/
+}
+
+header { /*Nosso cabeçalho como um todo*/
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header { /*Aqui o cabeçalho ficará sempre aparecendo na tela*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1; /*Para ele poder passar por cima do position relative do carousel de images*/
+}
+
+header > .container,
+footer > .container { /*Aqui ele pega o filho direto do header e do footer que tem a classe container, por isso utilizamos o >*/
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+} /*Assim a outra div que tem a classe .container não será afetado*/
+
+nav { /*Menu de navegação*/
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li { /*Itens do nosso menu de navegação*/
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu { /*Tamanho da nossa div*/
+    width: 32px;
+    height: 14px;
+}
+
+#check-hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-cursor-pointer { 
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block; /*Padrão do span é o display inline*/
+    margin-bottom: 4px;
+    transition: all 0.5s ease
+}
+
+input:checked + .hamburger-menu .line-1 { /*Aqui vai ficar a edição do meu menu hamburger, quando for clicado*/
+    transform: rotate(60deg);
+    transition: all 0.5s ease;
+}
+
+input:checked + .hamburger-menu .line-2 {
+    transform: scaleY(0);
+    transition: all 0.2s ease
+}
+
+input:checked + .hamburger-menu .line-3 {
+    transform: rotate(60deg);
+    transition: all 0.5s ease
+}
+
+
+.flex-container { /*Eu criei uma classe com display:flex para adicionar em todos os containers que precisem dele*/
+    display: flex;
+}
+
+#store-about img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section { /*Aqui todas as seções receberam esse padding em cima e embaixo*/
+    padding: 48px 0;
+}
+
+section h2 {
+    padding-bottom: 16px;
+}
+
+.cars-list { /*Aqui as imagens dentro da lista não ordenada ultrapassar o tamanho, será criada uma nova linha*/
+    flex-wrap: wrap;
+}
+
+.cars-list li {
+    list-style: none;
+    max-width: 307px; /*cada li terá 30% da div*/
+    margin-bottom: 24px;
+}
+
+.cars-list li img {
+    width: 100%;
+    height: 170px;
+}
+
+.cars-list h3 {
+    margin: 16px 0;
+}
+
+.central-item { /*aqui ele aplica somente para os itens do meio das nossas li, dai da o espaçamento entre elas*/
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #192a56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translate(0, -1px);
+    transition: all 0.2s ease;
+}
+
+.price {
+    margin: 16px 0;
+    display: block; /*Pra ficar abaixo*/
+}
+
+.price del {
+    color: rgb(149, 145, 145);
+    font-size: 14px;
+}
+
+form {
+    max-width: 360px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label { /*Aqui o label de cada input ficará POR CIMA*/
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea { /*Para tirar a interação do textarea*/
+    resize: none;
+    height: 120px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+    transition: all 0.2s ease;
+}
+
+footer li img:hover {
+    transform: translate(0, -1px);
+    transition: all 0.2s ease;
+}

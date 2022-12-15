@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+    <title>Pagliarini Motors</title>
+</head>
+<body>
+    <header>
+        <div class="container flex-container"> <!-- Esse container aqui será a parte do titulo e do menu hamburger -->
+            <h1>Pagliarini Motors</h1>
+            <input type="checkbox" id="check-hamburger-menu">
+            <div class="hamburger-menu">
+                <label for="check-hamburger-menu">
+                    <div class="hamburger-menu-cursor-pointer">
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <nav>
+            <div class="container "> <!-- Esse container fica só com o menu de navegação-->
+                <ul class="menu-navegacao">
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#destaque">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#promocoes">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carousel-images">
+        <img src="./Images/slide1.png" alt="Foto de um Porsche esportivo">
+        <img src="./Images/slide2.png" alt="Foto caminhonete da BMW">
+        <img src="./Images/slide3.png" alt="Foto de um Ford esportivo">
+    </div>
+    <section id="store-about">
+        <div class="container flex-container">
+            <img src="./Images/loja.jpg" alt="Imagem da loja">
+            <div>
+                <h2>Sobre a Pagliarini Motors</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium eaque tempore voluptates excepturi. Non dicta, esse inventore nesciunt et ducimus dolorum neque error velit adipisci reiciendis fugiat harum qui repellendus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta rerum harum perferendis, expedita autem beatae tenetur officiis fuga molestiae, ipsum odio repudiandae reiciendis ea nam consectetur vero iure, illo repellat!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaque">
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="cars-list flex-container">
+                
+                <li class="fusca">
+                    <img src="./Images/fusca.png" alt="Fusca 1996">
+                    <h3>Fusca 1996</h3>
+                    <p>Câmbio manual, 2 portas, vidros e travas manuais</p>
+                    <div class="price">
+                        <strong>R$37.220,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="central-item">
+                    <img src="./Images/BMW-Z4_1.jpg" alt="Carro da BMW">
+                    <h3>BMW Z4 M40i</h3>
+                    <p>Câmbio automático, 2 portas, vidros e travas elétricas</p>
+                    <div class="price">
+                        <strong>R$95.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./Images/porsche.jpg" alt="Carro da BMW">
+                    <h3>Porsche 911</h3>
+                    <p>Câmbio automático, 2 portas, vidros e travas elétricas, na cor azul ciano</p>
+                    <div class="price">
+                        <strong>R$85.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="promocoes">
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="cars-list flex-container">
+                <li>
+                    <img src="./Images/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>Câmbio automático, 4 portas, vidros e travas elétricas</p>
+                    <div class="price">
+                        <del>R$100.000,00</del> 
+                        <strong>R$75.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="central-item">
+                    <img src="./Images/moto-bmw.png" alt="Moto da BMW">
+                    <h3>Moto BMW 300cc</h3>
+                    <p>Conforto, estabilidade e potência definem as motos da BMW</p>
+                    <div class="price">
+                        <del>R$48.000,00</del> 
+                        <strong>R$38.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./Images/fusca.png" alt="Fusca 1996">
+                    <h3>Fusca 1996</h3>
+                    <p>Câmbio manual, 2 portas, vidros e travas manuais</p>
+                    <div class="price">
+                        <del>R$42.000,00</del> 
+                        <strong>R$37.220,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./Images/BMW-Z4_1.jpg" alt="Carro da BMW">
+                    <h3>BMW Z4 M40i</h3>
+                    <p>Câmbio automático, 2 portas, vidros e travas elétricas</p>
+                    <div class="price">
+                        <del>R$120.000,00</del> 
+                        <strong>R$95.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="central-item">
+                    <img src="./Images/porsche.jpg" alt="Carro da BMW">
+                    <h3>Porsche 911</h3>
+                    <p>Câmbio automático, 2 portas, vidros e travas elétricas, na cor azul ciano</p>
+                    <div class="price">
+                        <del>R$100.000,00</del> 
+                        <strong>R$85.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./Images/2023-porsche-911-carrera-t-in-python-green.png" alt="Carro da BMW">
+                    <h3>Porsche 911</h3>
+                    <p>Câmbio automático, 2 portas, vidros e travas elétricas, na cor verde chumbo</p>
+                    <div class="price">
+                        <del>R$110.000,00</del> 
+                        <strong>R$95.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-campo">
+                    <label for="tell">Telefone:</label>
+                    <input type="tel" id="tell" name="tell">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="car-interest">Veículo de interesse:</label>
+                    <input type="text" id="car-interest" name="carInterest">
+                </div>
+                <div class="form-campo">
+                    <label for="mensage">Mensagem:</label>
+                    <textarea id="mensage" name="mensage"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flex-container">
+            <p>
+                2022 &copy; Pagliarini Motors - Todos os direitos reservados
+            </p>
+            <ul class="flex-container">
+                <li>
+                    <a href="#">
+                        <img src="./Icones/facebook.png" alt="Facebook logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./Icones/instagram.png" alt="Instagram logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./Icones/youtube.png" alt="Youtube logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
